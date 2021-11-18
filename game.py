@@ -34,7 +34,6 @@ class Obstacles():
         self.randomize_poition()
         self.randomize_size()
 
-
     def randomize_position(self):
         self.position = (
             random.randint(0, GRID_WIDTH - 1) * SQUARE_SIZE,
@@ -46,7 +45,7 @@ class Obstacles():
             random.randint(0,128),
             random.randint(0,128),
         )
-        def randomize_size(self, surface):
+    def randomize_size(self, surface):
         r = pygame.Rect((self.position[0],self.position[1]), (SQUARE_SIZE, SQUARE_SIZE))
         pygame.draw.rect(surface, self.color, r)
 
