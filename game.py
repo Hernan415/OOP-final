@@ -15,10 +15,6 @@ GRID_HEIGHT = SCREEN_HEIGHT / SQUARE_SIZE
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
 # Directions
 UP = (0,-1)
-DOWN = (0,1)
-LEFT = (-1,0)
-RIGHT = (1,0)
-
 
 #Game that has a path that changes with power ups and obstacles and you as a player have to make it to 100 points to win
 
@@ -29,9 +25,9 @@ class Path():
     #Width
 
         #Modify as time goes on, no smaller than player + obstacles width
-        def size(self, surface):
-            map = pygame.Rect((self.position[0],self.position[1]), (SCREEN_WIDTH, SCREEN_HEIGHT))
-            pygame.draw.rect(surface, self.color, r)
+        def drawPath(surface):
+            for
+
 
 ##obstacles
 #class Obstacles():
@@ -122,3 +118,13 @@ class Path():
 
 def game():
     pygame.init()
+
+    # Setup code
+    clock = pygame.time.Clock()
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
+    framerate = 10 # Re-draw the screen 10 times every second
+
+    drawPath(screen)
+
+
+game()
