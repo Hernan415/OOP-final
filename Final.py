@@ -15,7 +15,6 @@ class Budget():
             self.hourlyPay = int(input("How much is your hourly pay: "))
             self.hoursWorked = int(input("How many hours do you plan on working this month? : "))
             self.paycheck = self.hourlyPay * self.hoursWorked
-            print(self.paycheck)
 
     class Bills():
         def __init__(self):
@@ -23,14 +22,12 @@ class Budget():
             self.rent = int(input("How much is your rent?: "))
             self.utilities = int(input("How much is your utilities bill?: "))
             self.bills = self.food + self.rent + self.utilities
-            print(self.bills)
 
     class Stocks():
         def __init__(self):
             self.dividends = int(input("If you get dividend payment from stocks, how much was this months?: "))
             self.investments = int(input("How much money will you be investing in the stock market this month?: "))
             self.outsideFinancials = self.dividends - self.investments
-            print(self.outsideFinancials)
 
 
 def monthlyBudget():
