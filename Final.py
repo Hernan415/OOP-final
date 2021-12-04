@@ -5,20 +5,24 @@ class Budget():
     def __init__(self):
         self.income = self.Income()
         self.expenses = self.Expenses()
-        self.emergancyFunds = self.income - self.expenses
+        self.emergancyFunds = self.income.paycheck - self.expenses.expenses
+        print("You have the following as disposable income this month:")
         print(self.emergancyFunds)
 
     class Income():
         def __init__(self):
             self.hourlyPay = int(input("How much is your hourly pay: "))
             self.hoursWorked = int(input("How many hours do you plan on working this month? : "))
-            self.paycheck = int(self.hourlyPay * self.hoursWorked)
+            self.paycheck = 
+
+        def paycheck(self,paycheck):
+            int(self.hourlyPay * self.hoursWorked)
 
     class Expenses():
         def __init__(self):
             self.bills = self.Bills()
             self.stocks = self.Stocks()
-            self.expenses = self.bills + self.stocks
+            self.expenses = self.bills.bills + self.stocks.stocks
 
         class Bills():
             def __init__(self):
