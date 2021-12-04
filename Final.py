@@ -18,7 +18,7 @@ class Budget():
         def __init__(self):
             self.bills = self.Bills()
             self.stocks = self.Stocks()
-            self.expenses = int(self.bills + self.stocks)
+            self.expenses = self.bills + self.stocks
 
         class Bills():
             def __init__(self):
@@ -31,7 +31,7 @@ class Budget():
             def __init__(self):
                 self.dividends = int(input("If you get dividend payment from stocks, how much was this months?: "))
                 self.investments = int(input("How much money will you be investing in the stock market this month?: "))
-                self.outsideFinancials = int(self.dividends - self.investments)
+                self.stocks = int(self.dividends - self.investments)
 
 
 def monthlyBudget():
