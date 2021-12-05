@@ -11,6 +11,7 @@ class Budget():
         self.calculateEmergancyFunds = (
             self.income.calculatePaycheck - self.expenses.expenses
             )
+            
         print("You have the following as disposable income this month:")
         print(self.calculateEmergancyFunds)
 
@@ -42,11 +43,16 @@ class Budget():
                 self.rent = int(input("How much is your rent?: "))
                 self.utilities = int(input("How much is your utilities bill?: "))
                 self.calculateBills()
+                self.calculateNecesities()
 
             def calculateBills(self):
                 self.bills = (
                     int(self.food + self.rent + self.utilities)
                     )
+            def calculateNecesities(self):
+                self.necesities = (
+                    int(self.food + self.rent)
+                )
 
         class Stocks():
             def __init__(self):
