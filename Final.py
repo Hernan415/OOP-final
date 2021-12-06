@@ -15,12 +15,12 @@ class Budget():
             )
 
     def calculateNecesitiesFunds(self):
-        self.calculateNecesitiesFunds = (
-            (self.expenses.bills.necesities / self.expenses.expenses) * 100
+        self.calculateNecesitiesFunds = round(
+            (self.expenses.bills.necesities / self.expenses.expenses) * 100 , 2
         )
     def calculateNonNecesities(self):
-        self.calculateNonNecesities = (
-            (self.expenses.stocks.investments / self.expenses.expenses) * 100
+        self.calculateNonNecesities = round(
+            (self.expenses.stocks.investments / self.expenses.expenses) * 100 , 2
         )
 
         print("You have the following as disposable income this month:")
